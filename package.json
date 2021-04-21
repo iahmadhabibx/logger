@@ -1,0 +1,15 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "A simple log writer for all of your logging needs",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "logger"
+  },
+  "author": "Ahmad Habib, iahmadhabibx@gmail.com",
+  "license": "MIT"
+}
