@@ -10,11 +10,11 @@
 - Copyright protected by Ahmad Habib™
 
 */
-let logs = ``;
-let loggerName = "Logger";
-let logColor = "blue";
-let bgColor = "white";
-let isIE = false;
+var logs = ``;
+var loggerName = "Logger";
+var logColor = "blue";
+var bgColor = "white";
+var isIE = false;
 
 function checkBrowser() {
     let browser = window.navigator.userAgent.indexOf("MSIE ");
