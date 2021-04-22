@@ -15,6 +15,8 @@ var loggerName = "Logger";
 var logColor = "blue";
 var bgColor = "white";
 var isIE = false;
+var type = 0;
+var fileFormat = [".log", ".txt"];
 
 function checkBrowser() {
     let browser = window.navigator.userAgent.indexOf("MSIE ");
@@ -77,6 +79,14 @@ try {
         bgColor = color;
     }
 
+    function setFormat(_type = 0) {
+        if(_type > 1 || _type < 0) {
+            console.log('%c Invalid type', 'color: white;background: orange');
+            return;
+        }
+        type = _type;
+    }
+
     function generateCurrentTime() {
         let date = new Date();
         let d = date.toDateString();
@@ -96,7 +106,7 @@ try {
     }
 
     function downloadLogs(addDate = false) {
-        let fileName = `${loggerName} ${addDate ? ' - ' + generateCurrentTime() : ''}.logs`;
+        let fileName = `${loggerName} ${addDate ? ' - ' + generateCurrentTime() : ''}${fileFormat[type]}`;
         let file = new Blob([logs], { type: 'text/plain' });
         let anchor = document.createElement("a");
         anchor.href = URL.createObjectURL(file);
