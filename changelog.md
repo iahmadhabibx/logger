@@ -10,6 +10,10 @@
 #Logger v1.1.0 22 - April - 2021
 - All variables are made global.
 
+
 #Logger v1.2.0 22 - April - 2021
 - Added new method setType(type) to set file format.
 - The type can be 0 (.log) or 1(.txt). In case of wrong format input, previous format will be selected. 
+
+#Logger v1.2.1 26 - April - 2021
+- Added minified version of logger for for efficient working.
