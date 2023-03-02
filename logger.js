@@ -10,13 +10,13 @@
 - Copyright protected by Ahmad Habib™
 
 */
-var logs = ``;
-var loggerName = "Logger";
-var logColor = "blue";
-var bgColor = "white";
-var isIE = false;
-var type = 0;
-var fileFormat = [".log", ".txt"];
+let logs = ``;
+let loggerName = "Logger";
+let logColor = "blue";
+let bgColor = "white";
+let isIE = false;
+let type = 0;
+let fileFormat = [".log", ".txt"];
 
 function checkBrowser() {
     let browser = window.navigator.userAgent.indexOf("MSIE ");
